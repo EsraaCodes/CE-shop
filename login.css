@@ -1,0 +1,191 @@
+/* Global reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #2a2a2a; /* Deep charcoal background */
+    color: rgb(169, 169, 169);  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+    background: linear-gradient(to bottom right, #2a2a2a, #4f4f4f); /* Dark charcoal to light grey gradient */
+}
+
+/* Store Name Styling */
+.store-name {
+    font-size: 40px;
+    color: #c89f57; /* Elegant gold for store name */
+    font-weight: 900;
+    letter-spacing: 3px;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+}
+
+/* Main form container */
+.container {
+    background-color: #fff;  /* White for contrast and clarity */
+    border-radius: 18px;
+    box-shadow: 0 12px 50px rgba(0, 0, 0, 0.25); /* Slightly darker shadow for depth */
+    width: 100%;
+    max-width: 460px;
+    padding: 50px;
+    text-align: center;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Header section */
+header {
+    margin-bottom: 40px;
+}
+
+h1 {
+    font-size: 34px;
+    color: #2d3e50; /* Deep navy for header */
+    font-weight: 700;
+    margin-bottom: 15px;
+    letter-spacing: 1px;
+}
+
+p {
+    font-size: 18px;
+    color: #6d7d87; /* Muted grey for a soft, readable contrast */
+    margin-bottom: 40px;
+}
+
+/* Input fields styling */
+input {
+    width: 100%;
+    padding: 18px;
+    font-size: 18px;
+    color: #333;
+    border: 2px solid #c2b8a3; /* Warm taupe border */
+    border-radius: 10px;
+    outline: none;
+    background-color: #f7f2e1; /* Light ivory background */
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+input:focus {
+    border-color: #c89f57; /* Warm gold focus for a luxurious look */
+    background-color: #fff; /* White background on focus */
+}
+
+/* Submit button styling */
+.submit-btn {
+    background-color: #2d3e50; /* Deep navy blue */
+    color: #fff;
+    padding: 18px;
+    font-size: 18px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 100%;  /* Full width for the button */
+    transition: background-color 0.3s ease;
+    margin-bottom: 25px;
+}
+
+.submit-btn:hover {
+    background-color: #1b2838; /* Darker navy for hover effect */
+}
+
+/* Social Login Buttons */
+.social-login {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+    margin-top: 25px;
+}
+
+/* General social button styles */
+.social-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f8f8f8; /* Soft grey background for elegance */
+    color: #333;
+    padding: 18px 0;
+    font-size: 18px;
+    width: 100%;       
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease, color 0.3s ease;
+    border: 2px solid #ddd; /* Light grey border */
+    text-align: center;
+    min-height: 60px;
+    box-sizing: border-box;
+}
+
+.social-btn i {
+    margin-right: 15px;
+    font-size: 22px;
+}
+
+/* Google button styling */
+.google-btn {
+    background-color: #f8f8f8; /* Soft grey background */
+    color: #333; /* Dark text */
+}
+
+.google-btn:hover {
+    background-color: #db4437; /* Google red on hover */
+    color: #fff; /* White text on hover */
+    transform: scale(1.05); /* Slight zoom effect */
+}
+
+/* Facebook button styling */
+.facebook-btn {
+    background-color: #f8f8f8; /* Soft grey background */
+    color: #333; /* Dark text */
+}
+
+.facebook-btn:hover {
+    background-color: #3b5998; /* Facebook blue on hover */
+    color: #fff; /* White text on hover */
+    transform: scale(1.05); /* Slight zoom effect */
+}
+
+/* Account option link styling */
+.account-option {
+    margin-top: 25px;
+    font-size: 14px;
+}
+
+.account-option a {
+    color: #2d3e50; /* Deep navy link color */
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.account-option a:hover {
+    text-decoration: underline;
+    color: #c89f57; /* Gold color on hover for accent */
+}
+
+/* Mobile responsiveness */
+@media (max-width: 480px) {
+    .container {
+        padding: 35px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    .submit-btn,
+    .social-btn {
+        font-size: 16px;
+        padding: 16px;
+    }
+}
