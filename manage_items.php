@@ -87,7 +87,7 @@ $result = mysqli_query($conn, $query);
             <td><?php echo $row['category_id']; ?></td>
             <td>
                 <?php if (!empty($row['image'])): ?>
-                    <img src="images/<?php echo htmlspecialchars($row['image']); ?>" alt="Product Image" style="width: 100px; height: auto;">
+                    <img src="images/<?php echo htmlspecialchars($row['image']); ?>" alt="Product Image" style="max-width: 50%; height: auto; min-width: 50px;">
                 <?php else: ?>
                     No Image
                 <?php endif; ?>
